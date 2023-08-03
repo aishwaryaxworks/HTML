@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Forms as tables</title></head>
+    <body>
+        <table>
+            <form>
+                <tr>
+                    <th> <label> Enter First name:</label></th>
+                    <td><input type="text" name="firstname" placeholder="First Name"></td>
+                </tr>
+                <tr>
+                    <th> Enter Last name:</th>
+                    <td><input type="text" name="lastname" placeholder="Last Name"></td>
+                </tr>
+                <tr>
+                    <th> Enter Email:</th>
+                    <td><input type="email" name="email" placeholder="Email ID"></td>
+                </tr>
+                <tr>
+                    <th> Enter Password:</th>
+                    <td><input type="password" name="password" placeholder="Password"></td>
+                </tr>
+                <tr>
+                    <th> Enter Date of birth:</th>
+                    <td><input type="date" name="dob"></td>
+                </tr>
+                <tr>
+                    <th> Enter Gender:</th>
+                    <td>
+                        <input type="radio" name="gender">Male
+                        <input type="radio" name="gender">Female
+                        <input type="radio" name="gender">Other
+                    </td>
+                </tr>
+                <div>
+                <tr>
+                    <label><th>Select City:</th></label>
+                    <td>
+                    <select>
+                        <option>Bangalore</option>
+                        <option>Mysore</option>
+                        <option>Hassan</option>
+                    </select></td>
+                </tr>
+                </div>
+                <div><tr>
+                    <th><label>Enter Age:</label></th>
+                    <td><input type="number" name="age"></td>
+                </tr></div>
+                <div><tr>
+                    <th><label>Enter Address</label></th>
+                    <td><textarea rows="5" cols="20"></textarea></td>
+                </tr></div>
+                <div><tr>
+                    <th><label>Upload file</label></th>
+                    <td><input type="file" name="uploadFile"></td>
+                </tr></div>
+                
+            </form>
+        </table>
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+    </body>
+</html>
