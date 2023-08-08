@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Box model</title>
+        <style>
+
+            /* padding */
+            .boxBorder{
+                padding: 10px 20px 30px 40px;
+                padding-top: 50px;
+                padding-left: 80px;
+                border: 5px dotted red;
+                margin: 10px 20px 30px 40px;
+                margin-top: 50px;
+                margin-left: 20px;
+                background-color: coral;
+            }
+
+            /* class selector */
+            .border{
+                border: 2px solid salmon ;
+            }
+
+            body{
+                /* background-color: burlywood; */
+                /* background-image: url(C:\\Users\\HP\\OneDrive\\Desktop\\Xworks_HTML\\succulent.webp); */
+                background-image:url('https://images.pexels.com/photos/2325446/pexels-photo-2325446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            /* instead of C:\Users\HP\OneDrive\Desktop\Xworks_HTML\train.jpg use double slash to avoid error
+            C:\\Users\\HP\\OneDrive\\Desktop\\Xworks_HTML\\train.jpg */
+
+            .rectangle{
+                border: 5px solid salmon;
+                height: 100px;
+                width: 300px;
+                display: inline-block;
+            }
+
+            .square{
+                border: 5px solid sienna;
+                height: 200px;
+                width: 200px;
+                display:inline-block;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- <img src="https://images.pexels.com/photos/2325446/pexels-photo-2325446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"> -->
+        <!-- CSS Box model -->
+        <div class="rectangle"></div>
+        <div class="square"></div>
+        <div>
+        <span class="rectangle">rectangle</span>
+        <span class="square">square</span>
+        </div>
+        <div class="boxBorder">
+            Box model has three properties:
+            1. Margin
+            2. Border
+            3. Padding
+        </div>
+        <div class="border">
+            Apply border css
+        </div>
+    </body>
+</html>

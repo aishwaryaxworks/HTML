@@ -17,12 +17,33 @@
                 text-decoration: underline;
                 text-transform: uppercase;
             }
+
+            /* Grouping selector */
+            h2, h3{
+                font-size: 25px;
+                color: steelblue;
+                text-decoration: overline;
+                text-transform: lowercase;
+            }
+
+            /* Class selector */
+            .grouping{      
+                color: brown;
+            }
+
+            /* Id Selector */
+            #idSelector{
+                color:chocolate;
+            }
         </style>
     </head>
     <body>
         <!-- CSS -->
         <h1>Introduction to Cascading Style Sheet</h1>
         <h2>What is CSS ? Why do we need CSS ?</h2>
+        <h2>This is using group selector.</h2>
+        <h3 class="grouping">This is class selector.</h3>
+        <h3 class="grouping" id="idSelector">This is Id selector.</h3>
 
         <div>
         <u>Cascading style sheet</u><br> <!--underline-->
@@ -38,3 +59,10 @@
         </div>
     </body>
 </html>
+
+<!-- 
+    Create a tag, apply element selector
+    Create a tag, apply class selector
+    Create a tag, apply id selector
+    Create a tag, apply element, class, id selector
+ -->
