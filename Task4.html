@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+       body{
+        background-color: rgb(48, 128, 128);
+       }
+       .register{
+        margin: auto; 
+        background-color: rgba(255, 255, 255, 0.829);
+        max-width: 500px;
+        padding: 20px;
+        border-radius: 10px;
+       }
+       input[type=text]{
+        display: inline-block;
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0;
+       }
+       input[type=email]{
+        display: inline-block;
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0;
+       }
+       input[type=password]{
+        display: inline-block;
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0;
+       }
+       input[type=submit]{
+        width: 95%;
+        padding: 10px;
+        margin: 20px 0;
+        border-radius: 5px;
+        border-width: 1px;
+        background: rgb(106, 202, 68);
+        font-size: 20px;
+       }
+    </style>
+</head>
+<body>
+    <div class="register">
+        <h1>Registration Form</h1>
+        <form>
+            <label> Enter First Name </label>
+            <input type="text" name="firstName" placeholder="Enter First Name">
+            <label> Enter LastName </label>
+            <input type="text" name="lastName" placeholder="Enter Last Name">
+            <label>Enter EmailId </label>
+            <input type="email" name="email" placeholder="Enter EmailId">
+            <label> Enter Password </label>
+            <input type="password" name="password" placeholder="Enter Password">
+            <input type="submit" value="Register">
+        </form>
+    </div>
+    
+</body>
+</html>

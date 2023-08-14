@@ -1,77 +1,129 @@
-    <!DOCTYPE html>
-    <html>
-        <head>
-            <title>Position Task</title>
-            <style>
-                .innerRect{
-                    position: relative;
-                    width: 300px;
-                    height: 200px;
-                    border: 2px solid rebeccapurple;
-                }
-                .outerRect{
-                    position: absolute;
-                    width: 200px;
-                    height: 100px;
-                    left: auto;
-                    top: auto;
-                    border: 2px solid rgb(31, 4, 58);
-                    margin: 50px;
-                }
-                .innerSq{
-                    position: relative;
-                    width: 200px;
-                    height: 200px;
-                    border: 2px solid rosybrown;
-                }
-                .outerSq{
-                    position: absolute;
-                    width: 100px;
-                    height: 100px;
-                    left: auto;
-                    top: auto;
-                    border: 2px solid royalblue;
-                    margin: 50px;
-                }
-                body{
-                    /* background-image: url(https://images.pexels.com/photos/4041268/pexels-photo-4041268.jpeg); */
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                }
-                .positionFixed1{
-                    position: fixed;
-                    right: 0;
-                    top: 0;
-                }
-                .positionFixed2{
-                    position: fixed;
-                    left: 0;
-                    top: 0;
-                }
-                .positionFixed3{
-                    position: fixed;
-                    right: 0;
-                    bottom: 0;
-                }
-                .positionFixed4{
-                    position: fixed;
-                    left: 0;
-                    bottom: 0;
-                }
-        </style>
-        </head>
-        <body>
-            <div class="outerRect">Outer Rectangle</div>
-            <div class="innerRect">Inner Rectangle</div>
-            <br>
-            <div class="outerSq">Outer Square</div>
-            <div class="innerSq">Inner Square</div>
-            <br>
-            <div class="positionFixed1"> We are checking top right !</div>
-            <div class="positionFixed2"> We are checking top left !</div>
-            <div class="positionFixed3"> We are checking bottom right !</div>
-            <div class="positionFixed4"> We are checking bottom left !</div>
-            <br>
-            <img src="https://images.pexels.com/photos/4041268/pexels-photo-4041268.jpeg">
-        </body>
-        </html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Position Task</title>
+    <style>
+        .innerRect{
+            position: relative;
+            width: 300px;
+            height: 200px;
+            border: 2px solid rebeccapurple;
+        }
+        .outerRect{
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            left: auto;
+            top: auto;
+            border: 2px solid rgb(31, 4, 58);
+            margin: 50px;
+        }
+        .innerSq{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border: 2px solid rosybrown;
+        }
+        .outerSq{
+            position: absolute;     /* Position absolute is used for placing something over an image. */
+            width: 100px;
+            height: 100px;
+            left: auto;
+            top: auto;
+            border: 2px solid royalblue;
+            margin: 50px;
+        }
+        body{
+            /* background-image: url(https://images.pexels.com/photos/4041268/pexels-photo-4041268.jpeg); */
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .positionFixed1{
+            position: fixed;
+            right: 0;
+            top: 0;
+            font-size: large;
+        }
+        .positionFixed2{
+            position: fixed;
+            left: 0;
+            top: 0;
+            font-size: large;
+        }
+        .positionFixed3{
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            font-size: large;
+        }
+        .positionFixed4{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            font-size: large;
+        }
+        img{
+            height: 600px;
+            }
+        .relative{
+            position: relative;
+            }
+        .topLeft{
+            position: absolute;
+            top: 0;
+            font-weight: bolder;
+            }
+        .topRt{
+            position: absolute;
+            top: 0;
+            right: 500px;
+            font-weight: bolder;
+            }
+        .bottomLeft{
+            position: absolute;
+            bottom: 0;
+            font-weight: bolder;
+            }
+        .bottomRt{
+            position: absolute;
+            bottom: 0;
+            right: 500px;
+            font-weight: bolder;
+            }
+        .centerPos{
+            position: absolute;
+            font-weight: bolder;
+            /* top: 0; */
+            bottom: 250px;
+            left: 350px;
+        }
+
+</style>
+</head>
+<body>
+    <!-- Position fixed, relative and absolute -->
+    <div class="outerRect">Outer Rectangle</div>
+    <div class="innerRect">Inner Rectangle</div>
+    <br>
+    <div class="outerSq">Outer Square</div>
+    <div class="innerSq">Inner Square</div>
+    <br>
+    <div class="positionFixed1"> We are checking top right !</div>
+    <div class="positionFixed2"> We are checking top left !</div>
+    <div class="positionFixed3"> We are checking bottom right !</div>
+    <div class="positionFixed4"> We are checking bottom left !</div>
+    <br>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nam sit ullam a, perferendis dolore dolor aut 
+        recusandae sapiente officiis quos fugiat expedita corporis autem nulla sint odio, doloremque tempore!</p>
+    <div class="relative">
+        <img src="https://images.pexels.com/photos/4041268/pexels-photo-4041268.jpeg">
+        <div class="topLeft">Top Left !</div>
+        <div class="topRt">Top Right !</div>
+        <div class="bottomLeft">Bottom Left !</div>
+        <div class="bottomRt">Bottom Right !</div>
+        <div class="centerPos">Center position !</div>
+    </div>
+    
+</body>
+</html>

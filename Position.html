@@ -15,6 +15,32 @@
             img{
                 height: 600px;
             }
+            .relative{
+                position: relative;
+            }
+            .topLeft{
+                position: absolute;
+                top: 0;
+                font-weight: bolder;
+            }
+            .topRt{
+                position: absolute;
+                top: 0;
+                right: 500px;
+                font-weight: bolder;
+            }
+            .bottomLeft{
+                position: absolute;
+                bottom: 0;
+                font-weight: bolder;
+            }
+            .bottomRt{
+                position: absolute;
+                bottom: 0;
+                right: 500px;
+                font-weight: bolder;
+            }
+
         </style>
     </head>
     <body>
@@ -26,8 +52,22 @@
         <div class="positionRelative">
             We are checking Position - relative !
         </div>
-        <img src="C:\\Users\\HP\\OneDrive\\Desktop\\Xworks_HTML\\cat.webp">
-        <img src="C:\\Users\\HP\\OneDrive\\Desktop\\Xworks_HTML\\cat.webp">
-        <img src="C:\\Users\\HP\\OneDrive\\Desktop\\Xworks_HTML\\cat.webp">
+        <div class="positionAbsolute">
+            We are checking Position - absolute !
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nam sit ullam a, perferendis dolore dolor aut 
+            recusandae sapiente officiis quos fugiat expedita corporis autem nulla sint odio, doloremque tempore!</p>
+        <div class="relative">
+            <img src="cat.webp">
+            <div class="topLeft">Top Left !</div>
+            <div class="topRt">Top Right !</div>
+            <div class="bottomLeft">Bottom Left !</div>
+            <div class="bottomRt">Bottom Right !</div>
+        </div>
+        <!-- <img src="C:\\Users\\HP\\OneDrive\\Desktop\\Xworks_HTML\\cat.webp"> -->
+        <audio src="[iSongs.info] 07 - Naguva Nayana.mp3" controls></audio><br>
+        <audio src="Jimin_BTS_Ha_Sung_woon_-_With_You.mp3" controls></audio><br>
+        <video src="video_20220403_135529.mp4" controls height="600px"></video><br>
+        <video src="https://www.pexels.com/video/london-eye-ferris-wheel-on-the-river-thames-3877441/" controls height="300px" width="600px"></video><br>
     </body>
 </html>

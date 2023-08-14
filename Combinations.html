@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Combinators</title>
+    <style>
+        /* Descedent Selector*/
+        div p{
+            color: green;
+        }
+        /* Child Selector*/
+        div > p{
+            color: red;
+        }
+        /* Adjacent Sibling Selector*/
+        div + p{  
+            color: blue;
+        }
+        /* General Sibling Selector*/
+        div ~ p{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <!--Combinators is relation of Selectors-->
+    <!--Two types
+    1) Descedent selector (div p)
+    2) Child Selector (div > p)
+    3) Adjacent sibling selector means next to it.(div + p)
+    4) General Sibling Selector (div ~ p)-->
+
+    <div>
+        <p>Hello</p>
+        <p>Good Morning</p>
+        <span>
+            <p>Using Descedent Selector</p>
+        </span>
+    </div>
+    <p>How are you doing?</p>
+    <p>Hello, This is Sarvesh Hitnalli</p>
+    <div>Hi, Nice to meet you!</div>
+
+</body>
+</html>
+
+<!-- TASK 
+    1) Create a form at the centre of the page
+    2) Create a form and insert a image in the same row.
+-->
