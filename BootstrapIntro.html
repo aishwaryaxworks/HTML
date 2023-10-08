@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--Bootstrap classes-->
+    <!--text-success, text-primary, text-warning, text-danger,text-white, text-dark are some bootstrap classes-->
+    <!--Background color- bg-success, bg-primary, bg-warning, bg-danger, bg-white, bg-dark-->
+    <div class="container bg-success">
+       <h1 class="text-success bg-dark"> Introduction to Bootstrap,CSS,HTML,Javascript, Java.</h1>
+       <p class="text-warning bg-dark"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quae mollitia vero 
+        voluptatem dolore eligendi optio cum nostio</p>
+    </div>
+    <div class="container-fluid bg-warning">
+        <h1 class="text-primary bg-dark"> Bootstrap is used to create a responsive web page </h1>
+        <p class="text-danger"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod nemo est soluta id 
+            ducimus laboriosam labo </p>
+    </div>
+
+    <img class="rounded" height="200px" src="rcb.webp"> <!--"rounded" for round corners-->
+    <img class="rounded-circle" height="200px" src="rcb.webp"> <!--"rounded-circle for round image"-->
+    <img class="img-thumbnail" width="300px" src="rcb.webp">  <!--"img-thumbnail" for image border-->
+
+    <!--Bootstrap Grid--Form,Table,Navigation bar-->
+    <div class="row">
+        <div class="col-6 text-success" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laborum dolore nulla iusto reiciendis possimus quae quas, laudantium esse consectetur? Suscipit accusamus exercitationem veritatis mollitia accusantium voluptatibus, incidunt ut nemo?</div>
+        <div class="col-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ratione qui, odit quis quod quisquam saepe reprehenderit possimus quasi animi officiis voluptas rem dolorem tempore expedita debitis laudantium ad repellendus.</div>
+            <br>
+    </div>
+    <div class="row">
+        <div class="col-3 text-success">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laborum dolore nulla iusto reiciendis possimus quae quas, laudantium esse consectetur? Suscipit accusamus exercitationem veritatis mollitia accusantium voluptatibus, incidunt ut nemo?</div>
+        <div class="col-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ratione qui, odit quis quod quisquam saepe reprehenderit possimus quasi animi officiis voluptas rem dolorem tempore expedita debitis  laudantium ad repellendus.</div>
+        <div class="col-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat perspiciatis quisquam dignissimos adipisci sit aliquid a qui minima quis error recusandae quod sequi quas beatae odit molestiae provident, eos rem!</div>
+        <div class="col-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores illo aliquid, earum temporibus dolor quis veniam delectus labore sapiente et dicta laudantium. Esse corporis, iusto temporibus ipsam error nam dolorum!</div>
+            <br>
+    </div>
+    <div class="row">
+        <div class="col-4 text-success">Lorem ipsum dolor sit amet consectetur adipisicing elit. A quisquam inventore repudiandae beatae vel, architecto in numquam distinctio ad mollitia adipisci est quidem quaerat, vitae aut obcaecati quos sed? Nulla.</div>
+        <div class="col-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint possimus id sed repudiandae esse at pariatur quibusdam, dolores perferendis debitis exercitationem voluptatum accusantium corrupti vitae itaque nobis repellat dicta ullam!</div>
+        <div class="col-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe repellat porro rerum recusandae. Soluta iusto incidunt mollitia dignissimos, animi nisi culpa cupiditate doloribus nulla quas vel aut ea nemo inventore!</div>
+        <br>
+    </div>
+    <div class="row">
+        <div class="col-6"><img src="cat.webp" alt="" height="200px" width="200px"></div>
+        <div class="col-6"><img src="cat.webp" alt="" height="200px" width="200px"></div>
+    </div>
+    <form class="container">
+        <div class="form-group">
+            <label for="">Enter name</label>
+            <input type="text" name="firstName" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">Enter email</label>
+            <input type="email" name="email" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+        <button type="submit" class="btn btn-warning">Reset</button>
+    </form>
+    <form class="container form-inline">
+        <div class="form-group">
+            <label for="">Enter name</label>
+            <input type="text" name="firstName" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">Enter email</label>
+            <input type="email" name="email" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+        <button type="submit" class="btn btn-warning">Reset</button>
+    </form>
+
+    <table class="<!-- table -->  <!-- table-striped --> table-dark">
+        <tr>
+            <th>Area</th>
+            <th>Pincode</th>
+            <th>State</th>
+        </tr>
+        <tr>
+            <td>BTM</td>
+            <td>560092</td>
+            <td>Karnataka</td>
+        </tr>
+        <tr>
+            <td>Hoodi</td>
+            <td>560048</td>
+            <td>Karnataka</td>
+        </tr>
+    </table>
+
+    <div class="navbar navbar-expand-sm bg-warning navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link">KGF</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Kantara</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Pushpa</a>
+            </li>
+        </ul>
+    </div>
+    <div class="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link">KGF</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Kantara</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Pushpa</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6 col-s-6"><img src="cat.webp" alt="" height="200px" width="200px"></div>
+        <div class="col--lg-6 col-sm-6"><img src="cat.webp" alt="" height="200px" width="200px"></div>
+    </div>
+    
+</body>
+</html>
+
+<!-- 
+    Create 4 images in a single row
+    Create in single row -> image, paragraph, form, image 
+-->
+
+<!-- 
+    navigation bar - using bootstrap classes
+    create a form at center
+    background image
+    footer - copyright symbol year
+
+    navigation bar - using bootstrap classes
+    create a form, table, image (in image section divide into three more parts to display 3 images)
+    background image
+    footer - copyright symbol year
+ -->
+
+<!-- 
+    next class :
+    javascript - dynamic webpage
+    print the statement
+    variables
+    functions
+    datatypes
+    popupbox message
+    sending data from html to js
+    sending data from js to html
+    form validation(event handling)
+    registration page - browser
+    login page - validation
+    home page
+-->

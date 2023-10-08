@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Java Script</title>
+        <script>
+            // javascript code
+            console.log("Introduction to Javascript")
+            // var variableName
+            var a
+            console.log(a)     /* Hoisting - calling a variable or function before the declaration*/
+            console.log(typeof(a))
+            var b=10                // number datatype
+            console.log(typeof(b))
+            console.log(b)
+            b='javascript'      // string datatype
+            console.log(typeof(b))
+            console.log(b)
+            b=true
+            console.log(b)  // boolean datatype
+            console.log(typeof(b))
+            //datatype
+            // undefined, string ,number,boolean
+            //Function
+            //function functionname(){
+
+          //  }
+
+          display()    //variables are declared first for he whole program, then all the funcions are declared, 
+                       //later all methods are performed
+
+          function display(){
+            console.log("calling display")
+          }
+
+        //   display()
+
+          function add(a,b){
+            console.log(a)
+            console.log(b)
+          }
+
+          add(10,20)
+
+          document.write("Introduction to Java Script")
+          document.write("<h1>JAVASCRIPT IS USED TO CREATE DYNAMIC WEBPAGE</h1>")
+
+          //  h1,to h6 , p   creat button and add events called click, mouseover
+          //button action
+         // Events Handling - action - events-click
+         // Events is handling by a function
+          function clickMe(){
+            console.log("calling clickme function")
+            var message = document.getElementById("message")
+            console.log(message)
+            message.innerHTML='Calling click-me function'
+            message.style.color = 'green'  /* 'red' */   /* 'antiquewhite' */   /* 'rgb(0,0,0)' */   /* 'turquoise' */
+            display()
+          }
+         // clickMe()
+        </script>
+    </head>
+    <body>
+        <button onclick="clickMe()">Click Me!!</button>
+        <span id="message"></span>
+        <br>
+        <button onmouseover="clickMe()">Click Me!!</button>
+    </body>
+</html>

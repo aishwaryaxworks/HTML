@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+        <script>
+            function register(){
+                console.log("Calling register function...")
+
+                var firstName = document.getElementById("firstName")
+                console.log(firstName)
+                console.log(firstName.value)
+                var firstNameError = document.getElementById("firstNameError")
+                firstNameError.innerHTML = ''
+
+                if(firstName.value == ''){
+                    console.log("Please enter first name...")
+                    firstNameError.innerHTML = "Please enter first name..."
+                    firstNameError.style.color = 'red'
+                }
+
+                var lastName = document.getElementById("lastName")
+                console.log(lastName)
+                console.log(lastName.value)
+                var lastNameError = document.getElementById("lastNameError")
+                lastNameError.innerHTML = ''
+
+                if(lastName.value == ''){
+                    console.log("Please enter last name...")
+                    lastNameError.innerHTML = "Please enter last name..."
+                    lastNameError.style.color = 'red'
+                }
+
+                var emailId = document.getElementById("emailId")
+                console.log(emailId)
+                console.log(emailId.value)
+                var emailIdError = document.getElementById("emailIdError")
+                emailIdError.innerHTML = ''
+
+                if(emailId.value == ''){
+                    console.log("Please enter email id...")
+                    emailIdError.innerHTML = "Please enter email id..."
+                    emailIdError.style.color = 'red'
+                }
+
+                var password = document.getElementById("password")
+                console.log(password)
+                console.log(password.value)
+                var passwordError = document.getElementById("passwordError")
+                passwordError.innerHTML = ''
+
+                if(password.value == ''){
+                    console.log("Please enter password...")
+                    passwordError.innerHTML = "Please enter password..."
+                    passwordError.style.color = 'red'
+                }
+
+                var gender = document.registrationForm.gender
+                console.log(gender)
+                console.log(gender[0])
+                console.log(gender[1])
+                console.log(gender[2])
+                console.log(gender[0].checked)
+                console.log(gender[1].checked)
+                console.log(gender[2].checked)
+
+                // for(var i=0; i<gender[i];i++){
+                //     console.log(gender[i])
+                // }
+
+                if(gender[0].checked == false && gender[1].checked == false && gender[2].checked == false){
+                    console.log("Please select gender...")
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form name="registrationForm">
+            <div>
+                <label>Enter first name</label>
+                <input type="text" name="firstName" id="firstName">
+                <span id="firstNameError"></span>
+            </div>
+            <div>
+                <label>Enter last name</label>
+                <input type="text" name="lastName" id="lastName">
+                <span id="lastNameError"></span>
+            </div>
+            <div>
+                <label for="">Enter email Id</label>
+                <input type="email" name="emailId" id="emailId">
+                <span id="emailIdError"></span>
+            </div>
+            <div>
+                <label for="">Enter password</label>
+                <input type="password" name="password" id="password">
+                <span id="passwordError"></span>
+            </div>
+            <div>
+                <label>Select Gender:</label>
+                <input type="radio" name="gender">Male
+                <input type="radio" name="gender">Female
+                <input type="radio" name="gender">Others
+            </div>
+            <!-- document.formname.field ====>>>> for accessing the radio elements of form -->
+
+            <button type="button" onclick="register()">Register</button>
+        </form>
+    </body>
+</html>
+<!-- 
+    email, password
+    city - select
+    email, password, name, gender, city - browser - storage
+    login page - email, password - match - browser - home page
+ -->
